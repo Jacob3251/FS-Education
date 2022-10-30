@@ -1,5 +1,5 @@
 .info {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   padding: 6% 5%;
 
   /* border: 10px solid silver; */
@@ -21,12 +21,12 @@
   text-align: left;
 }
 .info-btn {
-  background-color: palevioletred;
+  /* background-color: rgba(255, 192, 203, 0.964); */
   padding: 10px 20px;
   color: white;
 }
 .info-btn:hover {
-  background-color: rgba(216, 112, 147, 0.765);
+  /* background-color: rgba(216, 112, 147, 0.765); */
   scale: 1.05;
   box-shadow: 2px 5px 20px grey;
   padding: 10px 20px;

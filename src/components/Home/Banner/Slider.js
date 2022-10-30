@@ -17,7 +17,7 @@ const Slider = () => {
       showIndicators={false}
       autoPlay
       infiniteLoop
-      interval={3000}
+      interval={5000}
       axis
       verticalSwipe
     >

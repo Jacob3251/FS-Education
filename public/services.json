@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "service_name": "IELTS Preparation Course",
+    "price": 8000,
+    "image": "https://img.freepik.com/free-photo/front-view-female-student-white-shirt-black-jacket-wearing-backpack-holding-files-with-copybooks-blue-wall-college-university-lessons_140725-43393.jpg?w=740&t=st=1667156803~exp=1667157403~hmac=d341d88b12130e116468b777c356009626043a49b418b5b4b536ab0086811d9f",
+    "description": "Free Square Education Consultancy has an well equiped staff who are well versed in English language and are dedicated to students for the improvement of English knowledge"
+  },
+  {
+    "id": 2,
+    "service_name": "IELTS (OIETC/ELLTT) Course",
+    "price": 6000,
+    "image": "https://img.freepik.com/free-photo/front-view-male-student-wearing-black-backpack-holding-copybooks-files-blue-wall_140725-42636.jpg?t=st=1667156698~exp=1667157298~hmac=8c900478b768a574c7f2ea5c4b9fd44093c68dfaf71131c59c21f4530ad2813a",
+    "description": "Free Square Education Consultancy has an well equiped staff who are well versed in English language and are dedicated to students for the improvement of English knowledge"
+  },
+  {
+    "id": 3,
+    "service_name": "Live Appointment",
+    "price": 2000,
+    "image": "https://img.freepik.com/free-photo/cellular-technology-concept-smiling-young-woman-looking-mobile-phone-sceen-with-satisfied-face-expression-white-background_176420-48458.jpg?size=626&ext=jpg&ga=GA1.2.1939687355.1654800426&semt=sph",
+    "description": "Free Square Education Consultancy has a live booking system for one to one appointment for students to consult with our agents"
+  },
+  {
+    "id": 4,
+    "service_name": "Online Appoint",
+    "price": 3000,
+    "image": "https://img.freepik.com/free-photo/confident-blonde-female-enterpreneur-stylish-eyewear-stands-with-tablet-against-gray-wall-works-developing-new-project-young-teacher-glasses-uses-modern-technology_176420-15096.jpg?w=740&t=st=1667157243~exp=1667157843~hmac=75add3f6efa61a42612c93b947aa7b18002ec2bb23fa85a30594411be196ede0",
+    "description": "Free Square Education Consultancy has an well equiped staff who are  dedicated to students for providing online support to students who are in distant places"
+  },
+  {
+    "id": 5,
+    "service_name": "Appointment with Scholarship Consultant",
+    "price": 8000,
+    "image": "https://img.freepik.com/free-photo/young-smiling-student-intern-eyeglasses-standing-with-folder-red-wall_158595-4959.jpg?w=740&t=st=1667157025~exp=1667157625~hmac=ca4091424fc537a1595f9ccb1f1c65ffc044b727ba0caaeb502286d9955a618a",
+    "description": "Free Square Education Consultancy has an well equiped staff who are well versed in International Scholarships and are dedicated to students for providing support to gain scholarship"
+  },
+  {
+    "id": 6,
+    "service_name": "Alumni Support",
+    "price": 8000,
+    "image": "https://img.freepik.com/free-photo/talking-audience_1098-14094.jpg?size=626&ext=jpg&ga=GA1.2.1939687355.1654800426&semt=sph",
+    "description": "Free Square Education Consultancy has an well distributed alumni who have good placements and can provide good support"
+  }
+]
