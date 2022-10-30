@@ -1,0 +1,33 @@
+.info {
+  background-color: whitesmoke;
+  padding: 6% 5%;
+
+  /* border: 10px solid silver; */
+}
+.info-heading {
+  font-size: 36px;
+  /* padding-left: 5px; */
+  /* background-color: green; */
+  font-family: "Playfair Display", serif;
+}
+.info-heading span {
+  font-size: 40px;
+  font-weight: 600;
+  color: #d62626;
+}
+.info-description {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  text-align: left;
+}
+.info-btn {
+  background-color: palevioletred;
+  padding: 10px 20px;
+  color: white;
+}
+.info-btn:hover {
+  background-color: rgba(216, 112, 147, 0.765);
+  scale: 1.05;
+  box-shadow: 2px 5px 20px grey;
+  padding: 10px 20px;
+}
