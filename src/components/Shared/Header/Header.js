@@ -4,7 +4,7 @@ import { FaStream } from "react-icons/fa";
 import Logo from "../../../Images/Fs.png";
 import "./Header.css";
 const Header = () => {
-  const activeDesign = "text-red-500 text-underline scale-125";
+  const activeDesign = "text-red-500 text-underline scale-125 header-text";
   const [activeSide, setActiveSide] = useState(false);
   return (
     <header className="">
@@ -20,11 +20,11 @@ const Header = () => {
         {/* Menu here below */}
         <div className="menuBar w-1/3">
           <ul className="flex space-x-3 justify-end">
-            <li>
+            <li className="header-text">
               <NavLink
                 to="/home"
                 className={({ isActive }) =>
-                  isActive ? activeDesign : undefined
+                  isActive ? activeDesign : "header-text"
                 }
                 //   className={({ isActive }) =>
                 //     isActive ? activeDesign : undefined
@@ -33,41 +33,41 @@ const Header = () => {
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="header-text">
               <NavLink
                 to="services"
                 className={({ isActive }) =>
-                  isActive ? activeDesign : undefined
+                  isActive ? activeDesign : "header-text"
                 }
               >
                 Service
               </NavLink>
             </li>
-            <li>
+            <li className="header-text">
               <NavLink
                 to="blogs"
                 className={({ isActive }) =>
-                  isActive ? activeDesign : undefined
+                  isActive ? activeDesign : "header-text"
                 }
               >
                 Blogs
               </NavLink>
             </li>
-            <li>
+            <li className="header-text">
               <NavLink
                 to="about"
                 className={({ isActive }) =>
-                  isActive ? activeDesign : undefined
+                  isActive ? activeDesign : "header-text"
                 }
               >
                 About
               </NavLink>
             </li>
-            <li>
+            <li className="header-text">
               <NavLink
                 to="login"
                 className={({ isActive }) =>
-                  isActive ? activeDesign : undefined
+                  isActive ? activeDesign : "header-text"
                 }
               >
                 login
@@ -92,7 +92,7 @@ const Header = () => {
               }}
               to="/home"
               className={({ isActive }) =>
-                isActive ? activeDesign : undefined
+                isActive ? activeDesign : "header-text"
               }
             >
               Home
@@ -105,7 +105,7 @@ const Header = () => {
               }}
               to="services"
               className={({ isActive }) =>
-                isActive ? activeDesign : undefined
+                isActive ? activeDesign : "header-text"
               }
             >
               Service
@@ -118,7 +118,7 @@ const Header = () => {
               }}
               to="blogs"
               className={({ isActive }) =>
-                isActive ? activeDesign : undefined
+                isActive ? activeDesign : "header-text"
               }
             >
               Blogs
@@ -131,7 +131,7 @@ const Header = () => {
               }}
               to="about"
               className={({ isActive }) =>
-                isActive ? activeDesign : undefined
+                isActive ? activeDesign : "header-text"
               }
             >
               About
@@ -144,7 +144,7 @@ const Header = () => {
               }}
               to="login"
               className={({ isActive }) =>
-                isActive ? activeDesign : undefined
+                isActive ? activeDesign : "header-text"
               }
             >
               login

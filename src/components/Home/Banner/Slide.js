@@ -13,7 +13,7 @@ const Slide = ({ scholarship }) => {
           <p className="info-description">
             {description} {country}.
           </p>
-          <div className="info-btn duration-200 bg-pink-500 hover:bg-pink-400">
+          <div className="info-btn hover:scale-110 duration-150 text-white font-medium hover:shadow-indigo-400 hover:outline-indigo-600 hover:bg-white hover:text-indigo-500 hover:shadow-lg bg-indigo-600">
             <button className=" ">Press me</button>
           </div>
         </div>

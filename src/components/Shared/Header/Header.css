@@ -13,8 +13,12 @@ li {
   border-radius: 5px;
 }
 li:hover {
-  background-color: white;
+  background-color: #ed0b70;
+
   /* padding: 10px; */
+}
+li:hover .header-text {
+  color: white;
 }
 .menuBar {
   display: block;
