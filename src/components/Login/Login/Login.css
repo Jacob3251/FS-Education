@@ -1,0 +1,19 @@
+.login-form {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 20px 0;
+}
+.login-input {
+  display: block;
+  margin: 5px 0;
+  padding: 8px 10px;
+  width: 80%;
+  background-color: rgb(243, 243, 243);
+  color: rgba(0, 0, 0, 0.58);
+}
+.login-toggle {
+  color: palevioletred;
+  font-weight: 500;
+}
