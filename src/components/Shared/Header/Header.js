@@ -38,7 +38,7 @@ const Header = () => {
             </li>
             <li className="header-text">
               <NavLink
-                to="/home/#services"
+                to="/service"
                 className={({ isActive }) =>
                   isActive ? activeDesign : "header-text"
                 }
@@ -142,7 +142,7 @@ const Header = () => {
               onClick={() => {
                 setActiveSide(!activeSide);
               }}
-              to="services"
+              to="/home"
               className={({ isActive }) =>
                 isActive ? activeDesign : "header-text"
               }
