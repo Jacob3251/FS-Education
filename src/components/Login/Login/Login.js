@@ -29,7 +29,7 @@ const Login = () => {
         </button>
         <input
           type="submit"
-          value="Submit"
+          value="Login"
           className="mt-2 mx-auto w-[80%] block info-btn hover:scale-90 duration-150 text-white font-medium hover:shadow-indigo-400 hover:outline-indigo-600 hover:bg-white hover:text-indigo-500 hover:shadow-lg bg-indigo-600"
         />
       </form>
