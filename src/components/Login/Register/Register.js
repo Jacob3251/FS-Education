@@ -11,7 +11,7 @@ const Register = () => {
   const formRef = useRef();
 
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
+    useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
   if (loading) {
     return (
       <div className="flex justify-center  h-full min-h-[450px] sm:min-h-[575px] md:min-h-[625px]  items-center mt-[-35px]">

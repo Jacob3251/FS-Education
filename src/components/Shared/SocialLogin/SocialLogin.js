@@ -1,28 +1,35 @@
 import React from "react";
 import { FaFacebook, FaGithub, FaGoogle } from "react-icons/fa";
 import auth from "../../../firebase_init";
+import HashLoader from "react-spinners/HashLoader";
 import {
   useSignInWithGoogle,
   useSignInWithGithub,
 } from "react-firebase-hooks/auth";
 import { toast, ToastContainer } from "react-toastify";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 const SocialLogin = () => {
   const navigate = useNavigate();
+  const location = useLocation();
+  let from = location.state?.from?.pathname || "/";
   const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
   const [signInWithGithub, user1, loading1, error1] = useSignInWithGithub(auth);
 
   if (loading || loading1) {
-    return <p>Loading</p>;
+    return (
+      <div className="flex justify-center  items-center">
+        <HashLoader color="#ed0b70" />
+      </div>
+    );
   }
-  // if (user || user1) {
-  //   navigate("/home");
-  // }
+  if (user || user1) {
+    navigate(from, { replace: true });
+  }
   let errorElement;
   if (error || error1) {
     errorElement = (
       <div>
-        <p className="text-red-500">
+        <p className="text-red-500 text-center">
           Error: {error?.message} {error1?.message}
         </p>
       </div>

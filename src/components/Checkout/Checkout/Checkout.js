@@ -14,7 +14,7 @@ const Checkout = () => {
   if (getCart) {
     gotCart = JSON.parse(getCart);
   }
-  console.log(gotCart);
+  // console.log(gotCart);
   const formRef = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();

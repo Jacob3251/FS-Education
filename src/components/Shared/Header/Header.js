@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { signOut } from "firebase/auth";
 import { FaStream } from "react-icons/fa";
 import Logo from "../../../Images/Fs.png";
 import "./Header.css";
+import auth from "../../../firebase_init";
+import { useAuthState, useSignOut } from "react-firebase-hooks/auth";
+import { toast, ToastContainer } from "react-toastify";
 const Header = () => {
+  const [user] = useAuthState(auth);
+  // const [signOut, loading, error] = useSignOut(auth);
   const activeDesign = "text-red-500 text-underline scale-125 header-text";
   const [activeSide, setActiveSide] = useState(false);
   return (
@@ -26,16 +32,13 @@ const Header = () => {
                 className={({ isActive }) =>
                   isActive ? activeDesign : "header-text"
                 }
-                //   className={({ isActive }) =>
-                //     isActive ? activeDesign : undefined
-                //   }
               >
                 Home
               </NavLink>
             </li>
             <li className="header-text">
               <NavLink
-                to="services"
+                to="/home/#services"
                 className={({ isActive }) =>
                   isActive ? activeDesign : "header-text"
                 }
@@ -63,16 +66,52 @@ const Header = () => {
                 About
               </NavLink>
             </li>
-            <li className="header-text">
-              <NavLink
-                to="login"
-                className={({ isActive }) =>
-                  isActive ? activeDesign : "header-text"
-                }
-              >
-                login
-              </NavLink>
-            </li>
+            {!user && (
+              <li className="header-text">
+                <NavLink
+                  to="login"
+                  className={({ isActive }) =>
+                    isActive ? activeDesign : "header-text"
+                  }
+                >
+                  login
+                </NavLink>
+              </li>
+            )}
+            {!user && (
+              <li className="header-text">
+                <NavLink
+                  to="register"
+                  className={({ isActive }) =>
+                    isActive ? activeDesign : "header-text"
+                  }
+                >
+                  SignUp
+                </NavLink>
+              </li>
+            )}
+            {user && (
+              <li className="header-text">
+                <button
+                  className="header-text"
+                  onClick={() => {
+                    signOut(auth);
+                    toast("You're logged out", {
+                      position: "bottom-center",
+                      autoClose: 5000,
+                      hideProgressBar: false,
+                      closeOnClick: true,
+                      pauseOnHover: true,
+                      draggable: true,
+                      progress: undefined,
+                      theme: "dark",
+                    });
+                  }}
+                >
+                  Sign Out
+                </button>
+              </li>
+            )}
           </ul>
         </div>
         <button
@@ -124,34 +163,55 @@ const Header = () => {
               Blogs
             </NavLink>
           </li>
-          <li>
-            <NavLink
-              onClick={() => {
-                setActiveSide(!activeSide);
-              }}
-              to="about"
-              className={({ isActive }) =>
-                isActive ? activeDesign : "header-text"
-              }
-            >
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink
-              onClick={() => {
-                setActiveSide(!activeSide);
-              }}
-              to="login"
-              className={({ isActive }) =>
-                isActive ? activeDesign : "header-text"
-              }
-            >
-              login
-            </NavLink>
-          </li>
+          {!user && (
+            <li className="header-text">
+              <NavLink
+                to="login"
+                className={({ isActive }) =>
+                  isActive ? activeDesign : "header-text"
+                }
+              >
+                login
+              </NavLink>
+            </li>
+          )}
+          {!user && (
+            <li className="header-text">
+              <NavLink
+                to="register"
+                className={({ isActive }) =>
+                  isActive ? activeDesign : "header-text"
+                }
+              >
+                SignUp
+              </NavLink>
+            </li>
+          )}
+          {user && (
+            <li className="header-text">
+              <button
+                className="header-text"
+                onClick={() => {
+                  signOut(auth);
+                  toast("You're logged out", {
+                    position: "bottom-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "dark",
+                  });
+                }}
+              >
+                Sign Out
+              </button>
+            </li>
+          )}
         </ul>
       </div>
+      <ToastContainer />
     </header>
   );
 };
