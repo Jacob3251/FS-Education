@@ -24,7 +24,7 @@ const Checkout = () => {
     const number = formRef.current[4].value;
     console.log(name, email, address, number);
 
-    toast.success(`"Wow so easy ${name}`, {
+    toast.success(`"Your information has been collected ${name}!!`, {
       position: "bottom-center",
       autoClose: 5000,
       hideProgressBar: false,

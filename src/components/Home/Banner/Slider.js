@@ -12,14 +12,11 @@ const Slider = () => {
   }, []);
   return (
     <Carousel
-      showStatus={false}
-      showThumbs={false}
-      showIndicators={false}
       autoPlay
       infiniteLoop
       interval={5000}
-      axis
-      verticalSwipe
+      showThumbs={false}
+      showStatus={false}
     >
       {scholarship.map((scholarship) => (
         <Slide key={scholarship.id} scholarship={scholarship} />
