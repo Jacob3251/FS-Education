@@ -10,6 +10,8 @@ import Login from "./components/Login/Login/Login";
 import Register from "./components/Login/Register/Register";
 import RequireAuth from "./components/Shared/RequireAuth/RequireAuth";
 import ServiceMain from "./components/ServiceMain/Service";
+import About from "./components/About/About";
+import Blog from "./components/Blog/Blog";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/home" element={<Home />}></Route>
+        <Route path="/about" element={<About />}></Route>
+        <Route path="/blogs" element={<Blog />}></Route>
         <Route path="/service" element={<ServiceMain />}></Route>
         <Route path="/login" element={<Login />}></Route>
         <Route path="/register" element={<Register />}></Route>
