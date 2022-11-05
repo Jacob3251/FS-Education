@@ -2,11 +2,12 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <div className="w-[85%] mx-auto bg-slate-100 my-5 min-h-[80vh] p-5">
+    <div className="w-[85%] mx-auto bg-slate-100 my-5 min-h-[90vh] p-5">
       <h3 className="text-4xl mb-5 font-bold font-mono text-[#ed0b70] ">
         Blog Posts
       </h3>
-      <div className="space-y-10">
+      <p>Blogs are coming...</p>
+      {/* <div className="space-y-10">
         <div className="w-[95%] mx-auto">
           <h3 className="text-xl font-semibold">
             Difference between authorization and authentication?
@@ -60,7 +61,7 @@ const Blog = () => {
       </div>
       <div>
         <img src="" alt="" />
-      </div>
+      </div> */}
     </div>
   );
 };
